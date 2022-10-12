@@ -1,6 +1,41 @@
-# Getting Started with Create React App
+# Fictitious Grocery Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+- The project goal is to demo:
+  - React app w/ Typescript
+  - Redux for state management (using latest Toolkit)
+  - Material UI for styling
+  - Jest tests
+- React web app creating a Fictitious grocery store with grapes, peach and apple Available
+
+## Behaviour
+
+- Bag of grapes priced at $5 per bag
+- Apples priced at $3 per apple
+- Peaches priced at $7 per peach
+- Promotions:
+  - Buy one bag of grapes and get another bag of grapes for free ("Two for
+    the price of one")
+  - Buy at least two apples and get a 20% discount on apples
+- Checkout:
+  - The output should be a number representing the total
+    price at checkout after discounts.
+
+## Example Scenarios
+
+```
+[ ['grapes', 1], ['apples', 0], ['peaches', 1] ] => 12
+[ ['grapes', 1], ['apples', 1], ['peaches', 1] ] => 15
+[ ['grapes', 2], ['apples', 2], ['peaches', 1] ] => 16.8
+[ ['grapes', 3], ['apples', 5], ['peaches', 2] ] => 36
+[ ['peaches', 7], ['grapes', 7], ['apples', 7] ] => 85.8
+```
+
+## Environment
+
+- The app relies on two environment variables to be used as feature flags for enabling promotions (grapes and apple).
+- `.env` file is responsible for holding these vars
 
 ## Available Scripts
 
